@@ -16,6 +16,13 @@ export function Form() {
     }
     if (counter === 4) {
       console.log(inputValue, "sign up was successfull");
+      e.target.reset();
+      setInputValue({
+        email: "",
+        userName: "",
+        password: "",
+        confirmPassword: "",
+      });
     } else {
       console.log("not valid");
     }
